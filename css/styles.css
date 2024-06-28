@@ -144,3 +144,14 @@ h2 {
 img{
     max-width:4rem;
 }
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
