@@ -1,0 +1,184 @@
+@charset"UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/*デスクトップ用*/
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .header__logo {
+    font-size: 24px;
+  }
+  .header__nav {
+    display: flex;
+    gap: 20px;
+  }
+  .header__nav a {
+    font-size: 16px;
+  }
+  .header__nav a:hover {
+    color: #f00;
+  }
+  .main {
+    display: flex;
+    gap: 20px;
+  }
+  .main__content {
+    flex: 1;
+  }
+  .main__content h2 {
+    font-size: 24px;
+  }
+  .main__content p {
+    font-size: 16px;
+  }
+  .main__sidebar {
+    width: 300px;
+  }
+  .main__sidebar h3 {
+    font-size: 20px;
+  }
+  .main__sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .main__sidebar li {
+    margin-bottom: 10px;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__nav {
+    display: flex;
+    gap: 20px;
+  }
+  .footer__nav a {
+    font-size: 16px;
+  }
+  .footer__nav a:hover {
+    color: #f00;
+  }
+}
+
+/*スマホ用*/
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .header__logo {
+    font-size: 24px;
+  }
+  .header__nav {
+    display: flex;
+    gap: 20px;
+  }
+  .header__nav a {
+    font-size: 16px;
+  }
+  .header__nav a:hover {
+    color: #f00;
+  }
+  .main {
+    display: flex;
+    gap: 20px;
+  }
+  .main__content {
+    flex: 1;
+  }
+  .main__content h2 {
+    font-size: 24px;
+  }
+  .main__content p {
+    font-size: 16px;
+  }
+  .main__sidebar {
+    width: 300px;
+  }
+  .main__sidebar h3 {
+    font-size: 20px;
+  }
+  .main__sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .main__sidebar li {
+    margin-bottom: 10px;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__nav {
+    display: flex;
+    gap: 20px;
+  }
+  .footer__nav a {
+    font-size: 16px;
+  }
+  .footer__nav a:hover {
+    color: #f00;
+  }
+}
+
+/*共通部分*/
+html{
+    font-size: 30px;
+}
+header {
+  background-image: url('path/to/your/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: left center; 
+  padding-left: 100px; 
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+}
+
+img{
+    max-width:4rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Caveat', cursive;
+    color:#fff;
+}
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8aa7a1;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden; /* マウスの位置を全体に対して取得するために必要 */
+}
+#spotlight {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%);
+  border-radius: 50%;
+  pointer-events: none; /* マウスイベントを無視する */
+  transform: translate(-50%, -50%);
+}
