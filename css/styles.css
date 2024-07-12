@@ -2,126 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 /*デスクトップ用*/
-@media screen and (min-width: 768px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-  }
-  .header__logo {
-    font-size: 24px;
-  }
-  .header__nav {
-    display: flex;
-    gap: 20px;
-  }
-  .header__nav a {
-    font-size: 16px;
-  }
-  .header__nav a:hover {
-    color: #f00;
-  }
-  .main {
-    display: flex;
-    gap: 20px;
-  }
-  .main__content {
-    flex: 1;
-  }
-  .main__content h2 {
-    font-size: 24px;
-  }
-  .main__content p {
-    font-size: 16px;
-  }
-  .main__sidebar {
-    width: 300px;
-  }
-  .main__sidebar h3 {
-    font-size: 20px;
-  }
-  .main__sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  .main__sidebar li {
-    margin-bottom: 10px;
-  }
-  .footer {
-    padding: 20px 0;
-  }
-  .footer__nav {
-    display: flex;
-    gap: 20px;
-  }
-  .footer__nav a {
-    font-size: 16px;
-  }
-  .footer__nav a:hover {
-    color: #f00;
+@media (min-width: 1025px) {
+  h1 {
+      font-size: 3rem; /* 大きい画面用サイズ */
   }
 }
 
 /*スマホ用*/
-@media screen and (max-width: 767px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.5rem; /* 小さい画面用サイズ */
   }
-  .header__logo {
-    font-size: 24px;
+
+  .nav-list {
+      flex-direction: column;
+      gap: 0.5rem;
   }
-  .header__nav {
-    display: flex;
-    gap: 20px;
-  }
-  .header__nav a {
-    font-size: 16px;
-  }
-  .header__nav a:hover {
-    color: #f00;
-  }
-  .main {
-    display: flex;
-    gap: 20px;
-  }
-  .main__content {
-    flex: 1;
-  }
-  .main__content h2 {
-    font-size: 24px;
-  }
-  .main__content p {
-    font-size: 16px;
-  }
-  .main__sidebar {
-    width: 300px;
-  }
-  .main__sidebar h3 {
-    font-size: 20px;
-  }
-  .main__sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  .main__sidebar li {
-    margin-bottom: 10px;
-  }
-  .footer {
-    padding: 20px 0;
-  }
-  .footer__nav {
-    display: flex;
-    gap: 20px;
-  }
-  .footer__nav a {
-    font-size: 16px;
-  }
-  .footer__nav a:hover {
-    color: #f00;
+}
+
+/* タブレット用 */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+      font-size: 2.5rem; /* 中程度の画面用サイズ */
   }
 }
 
@@ -134,7 +36,6 @@ header {
   background-size: contain;
   background-repeat: no-repeat; 
   background-position: left center; 
-  padding-left: 100px; 
 }
 
 h2 {
