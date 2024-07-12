@@ -39,6 +39,7 @@ header {
 }
 
 h2 {
+  font-size: 3rem;
     font-family: 'Caveat', cursive;
 }
 
@@ -53,9 +54,11 @@ a {
     color:#fff;
 }
 .nav-list{
+  font-size: 2rem;
     display: flex;
     gap: 1rem;
     list-style: none;
+    padding: 0;
 }
 
 
