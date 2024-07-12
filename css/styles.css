@@ -170,15 +170,17 @@ body {
   text-align: center;
   overflow: hidden; /* マウスの位置を全体に対して取得するために必要 */
 }
-#spotlight {
+.spotlight {
   width: 256px;
   height: 256px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%);
+  background: radial-gradient(circle, rgba(255,255,255,0.48) 0%, rgba(255,255,255,0.1) 80%, rgba(255,255,255,0.01) 100%);
   border-radius: 50%;
   pointer-events: none; /* マウスイベントを無視する */
   transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000;
 }
