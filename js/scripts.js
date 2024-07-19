@@ -39,3 +39,26 @@ document.addEventListener('mousemove', function(e) {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.nav-link');
+    const body = document.querySelector('body');
+
+    // 初回ロード時にフェードイン効果を適用
+    body.classList.add('fade-in');
+
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // デフォルトのリンク動作を無効化
+            const targetUrl = e.target.href;
+
+            // フェードアウト効果を追加
+            body.classList.remove('fade-in');
+            body.classList.add('fade-out');
+
+            // フェードアウトが完了したら次のページに遷移
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 1000); // フェードアウトの時間に合わせる
+        });
+    });
+});
