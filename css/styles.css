@@ -436,3 +436,40 @@ form {
     flex-direction: column;
     gap: 1rem;
 }
+/* Instagram link styles */
+.nav-link[href*="instagram.com"]::before {
+  content: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png'); /* Instagram icon */
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Social media section */
+.social-media {
+  text-align: center;
+}
+
+.social-media h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #3498db; /* Accent color on hover */
+}
+
+.social-icon {
+  width: 40px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 0.5rem;
+}
+
