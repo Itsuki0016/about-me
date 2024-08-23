@@ -5,16 +5,18 @@
 /*デスクトップ用*/
 @media (min-width: 1025px) {
   h1 {
-      font-size: 3rem; /* 大きい画面用サイズ */
+      font-size: 5rem; /* 大きい画面用サイズ */
+  }
+  .list li{
+    font-size: 3rem;
   }
 }
 
 /*スマホ用*/
 @media (max-width: 600px) {
   h1 {
-      font-size: 2rem; /* 小さい画面用サイズ */
+      font-size: 1rem; /* 小さい画面用サイズ */
   }
-
   .nav-list {
       flex-direction: column;
       gap: 0.5rem;
@@ -33,7 +35,7 @@ html{
     font-size: 2rem;
 }
 header {
-  background-image: url('path/to/your/logo.png');
+  font-family: 'Caveat', cursive;
   background-size: contain;
   background-repeat: no-repeat; 
   background-position: left center; 
@@ -50,10 +52,10 @@ img{
 
 a {
     text-decoration: none;
-    color: #333;
     font-family: 'Caveat', cursive;
     color:#fff;
 }
+
 .nav-list{
   font-size: 2rem;
     display: flex;
@@ -62,6 +64,7 @@ a {
     justify-content: center;
 }
 .footer{
+    margin-top: auto;
     background-color: #333;
     display: flex;
     justify-content: center;
@@ -70,21 +73,12 @@ a {
     font-size: 1.5rem;
     font-family: 'Caveat', cursive;
     position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     
 }
-.footer_2{
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: 'Caveat', cursive;
-  bottom: 0;
-  width: 100%;
-}
+
 
 body {
   margin: 0;
@@ -485,23 +479,4 @@ form {
   margin-right: 0.5rem;
 }
 
-.spotlight {
-  width: 256px;
-  height: 256px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(255,255,255,0.48) 0%, rgba(255,255,255,0.1) 80%, rgba(255,255,255,0.01) 100%);
-  border-radius: 50%;
-  pointer-events: none; /* マウスイベントを無視する */
-  transform: translate(-50%, -50%);
-  display: none;
-  z-index: 1000;
-}
 
-
-
-.body a img{
-
-}
