@@ -62,3 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // フォームのデフォルトの送信動作を防ぐ
+
+    // ここにフォームの送信処理を追加（例：AJAXで送信する場合）
+    alert("フォームが送信されました。"); // 確認用のアラート（必要に応じて削除）
+
+    // フォームのリセット
+    this.reset();
+});
