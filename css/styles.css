@@ -12,7 +12,7 @@
 /*スマホ用*/
 @media (max-width: 600px) {
   h1 {
-      font-size: 1.5rem; /* 小さい画面用サイズ */
+      font-size: 2rem; /* 小さい画面用サイズ */
   }
 
   .nav-list {
@@ -30,7 +30,7 @@
 
 /*共通部分*/
 html{
-    font-size: 30px;
+    font-size: 2rem;
 }
 header {
   background-image: url('path/to/your/logo.png');
@@ -141,77 +141,89 @@ body {
 
 
 
-/* 自己紹介セクションのスタイル */
 #about {
-  padding: 20px;
+  padding: 40px;
   margin: 20px auto;
   max-width: 800px;
-}
-
-.list {
-  color: #333;
+  background-image: url(/img/murataitsuki.jpg);
+  background-size: cover; /* 画像を画面全体にフィットさせる */
+  background-position: center; /* 画像を中央に配置する */
+  background-repeat: no-repeat; /* 画像を繰り返さない */
+  background-attachment: fixed; /* スクロールしても画像を固定する */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  top: 0;
-  z-index: 1;
-  width: 100%; /* リストが画面幅に収まるようにする */
 }
 
-.about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-#about h3 {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-#about p {
-  font-size: 1.6rem;
-  line-height: 1.6;
+#about h2 {
   margin-bottom: 10px;
 }
 
+#about p,
 #about ul {
   font-size: 1.6rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+}
+
+#about ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 0; /* リストの上マージンをリセット */
 }
 
 #about ul li {
   margin-bottom: 10px;
   padding-left: 20px;
   position: relative;
-  font-family: "Kosugi Maru", sans-serif;
 }
 
 #about ul li::before {
   content: '•';
   position: absolute;
   left: 0;
-  color: #555;
-  font-family: "Kosugi Maru", sans-serif;
+  color: #007BFF; /* リストアイコンの色 */
+}
+
+.scroll-section {
+  opacity: 0; /* 初期状態で非表示 */
+  transform: translateY(50px); /* 初期位置を下にずらす */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-section.visible {
+  opacity: 1; /* スクロールで表示 */
+  transform: translateY(0); /* 元の位置に戻す */
 }
 
 /* コンテンツのスタイル */
 .content {
   padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
   font-family: "Kosugi Maru", sans-serif;
 }
 
+.content h3{
+  color:#333;
+  font-size: 2rem;
+}
+.content p{
+  color: #333;
+  font-size: 1.5rem;
+}
+.list h2{
+  font-size: 5rem;
+}
+.list li{
+  color:#aaffaa;
+  font-family: "Kosugi Maru", sans-serif;
+}
+
+
 .contact {
   padding: 20px;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: auto;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -486,4 +498,10 @@ form {
   transform: translate(-50%, -50%);
   display: none;
   z-index: 1000;
+}
+
+
+
+.body a img{
+
 }
