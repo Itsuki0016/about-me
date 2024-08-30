@@ -30,6 +30,9 @@
   content h3{
     font-size: 1rem;
   }
+  .list h2{
+    font-size: 3rem;
+  }
 }
 
 /* タブレット用 */
@@ -212,7 +215,7 @@ body {
   color: #333;
 }
 .list h2{
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .list li{
   color:#aaffaa;
