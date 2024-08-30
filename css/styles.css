@@ -10,16 +10,25 @@
   .list li{
     font-size: 3rem;
   }
+  .content h3{
+    font-size: 2rem;
+  }
+  .content p{
+    font-size: 1.5rem;
+  }
 }
 
 /*スマホ用*/
 @media (max-width: 600px) {
   h1 {
-      font-size: 1rem; /* 小さい画面用サイズ */
+      font-size: 2.3rem; /* 小さい画面用サイズ */
   }
   .nav-list {
       flex-direction: column;
       gap: 0.5rem;
+  }
+  content h3{
+    font-size: 1rem;
   }
 }
 
@@ -152,7 +161,6 @@ body {
   margin-bottom: 10px;
 }
 
-#about p,
 #about ul {
   font-size: 1.6rem;
   line-height: 1.6;
@@ -199,11 +207,9 @@ body {
 
 .content h3{
   color:#333;
-  font-size: 2rem;
 }
 .content p{
   color: #333;
-  font-size: 1.5rem;
 }
 .list h2{
   font-size: 5rem;
